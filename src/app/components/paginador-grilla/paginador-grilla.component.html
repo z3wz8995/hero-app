@@ -1,0 +1,13 @@
+<div class="d-flex flex-wrap col-12 container">
+    <div class="d-flex justify-content-end align-items-center w-100">
+        <div class="order" (click)="changeOrder()">
+            {{azOrder?"A-Z":"Z-A"}}
+            <img src="assets/img/order.svg" alt="orden" class="order {{azOrder?'':'invert'}}">
+        </div>
+    </div>
+    <div *ngFor="let Hero of data" class="padre">
+        <img src="{{Hero.thumbnail.path+'.'+Hero.thumbnail.extension}}" alt="{{Hero.name}}" class="hero-image">
+        <div class=" texto-encima ">{{Hero.name}}</div>
+        <div class="like"></div>
+    </div>
+</div>

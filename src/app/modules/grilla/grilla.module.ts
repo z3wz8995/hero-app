@@ -1,18 +1,22 @@
 import { NgModule } from "@angular/core";
-import { GrillaComponent } from "./pages/grilla.component";
-import { RouterModule } from '@angular/router';
-import { GrillaRouterModule } from "./grilla.router.module";
-import { GrillaLayout } from './grilla.layout';
+import { GrillaComponent } from "./grilla.component";
+import { RouterModule, Routes } from '@angular/router';
+import { TopMenuBarModule } from "src/app/components/top-menu-bar/top-menu-bar.module";
+import { PaginadorGrillaModule } from '../../components/paginador-grilla/paginador-grilla.module';
 
+
+const routes:Routes=[{
+    path:"",
+    component:GrillaComponent
+}]
 @NgModule({
     declarations:[
-        GrillaComponent,
-        GrillaLayout
+        GrillaComponent
     ],
     imports:[
-        RouterModule,
-        GrillaRouterModule
-
+        RouterModule.forChild(routes),
+        TopMenuBarModule,
+        PaginadorGrillaModule
     ]
 })
 

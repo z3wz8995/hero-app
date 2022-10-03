@@ -1,0 +1,44 @@
+@media (max-width:768px) {
+    // mobile
+    #foto1 {
+        width: 117px;
+    }
+    .margen-container {
+        padding-top: 0.46rem;
+        padding-bottom: 1.125rem;
+    }
+}
+
+@media (min-width:768px) {
+    //desktop
+    #foto1 {
+        width: 232px;
+    }
+}
+
+.search-bar {
+    background: #F7F7F7;
+    box-shadow: 0px 3px 10px #81818129;
+    border-radius: 24px;
+    height: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    margin-top: 32.85px;
+    #search {
+        position: absolute;
+        left: 29px
+    }
+    .search-input {
+        border: 0;
+        background: transparent;
+        outline: transparent;
+        width: 70%;
+        position: absolute;
+        left: 96px;
+         ::placeholder {
+            font-weight: 700;
+        }
+    }
+}
