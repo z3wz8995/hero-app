@@ -1,13 +1,22 @@
-<div class="d-flex flex-wrap col-12 container">
-    <div class="d-flex justify-content-end align-items-center w-100">
-        <div class="order" (click)="changeOrder()">
-            {{azOrder?"A-Z":"Z-A"}}
-            <img src="assets/img/order.svg" alt="orden" class="order {{azOrder?'':'invert'}}">
+<div>
+    <div class="d-flex flex-wrap col-12 container-grilla">
+        <div class="d-flex justify-content-end align-items-center w-100">
+            <div class="order" (click)="changeOrder()">
+                {{azOrder?"A-Z":"Z-A"}}
+                <img src="assets/img/order.svg" alt="orden" class="order {{azOrder?'':'invert'}}">
+            </div>
+        </div>
+        <div *ngFor="let Hero of data" class="padre">
+            <img src="{{Hero.thumbnail.path+'.'+Hero.thumbnail.extension}}" alt="{{Hero.name}}" class="hero-image">
+            <div class=" texto-encima ">{{Hero.name}}</div>
+            <div class="like"></div>
         </div>
     </div>
-    <div *ngFor="let Hero of data" class="padre">
-        <img src="{{Hero.thumbnail.path+'.'+Hero.thumbnail.extension}}" alt="{{Hero.name}}" class="hero-image">
-        <div class=" texto-encima ">{{Hero.name}}</div>
-        <div class="like"></div>
+    <div class="paginador">
+        <img src="assets/img/fle-izq.svg" alt="fle-izq" id="fle-izq" (click)="changePage(page-1)">
+        <label (click)="changePage(1)" [ngClass]="{'active':page==1}">1</label>
+        <label (click)="changePage(2)" [ngClass]="{'active':page==2}">2</label>
+        <label (click)="changePage(3)" [ngClass]="{'active':page==3}">3</label>
+        <img src="assets/img/fle-der.svg" alt="fle-der" id="fle-der" (click)="changePage(page+1)">
     </div>
 </div>

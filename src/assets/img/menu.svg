@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 32 32">
+  <g id="burger_menu" data-name="burger menu" transform="translate(-1325 -469)">
+    <rect id="Rectangle_2611" data-name="Rectangle 2611" width="32" height="32" transform="translate(1325 469)" fill="none"/>
+    <g id="Group_250" data-name="Group 250" transform="translate(1328.2 473.8)">
+      <rect id="Rectangle_917" data-name="Rectangle 917" width="25.6" height="3.2" rx="1.6" transform="translate(0 0)" fill="#ff3442"/>
+      <rect id="Rectangle_920" data-name="Rectangle 920" width="25.6" height="3.2" rx="1.6" transform="translate(0 9.6)" fill="#ff3442"/>
+      <rect id="Rectangle_921" data-name="Rectangle 921" width="25.6" height="3.2" rx="1.6" transform="translate(0 19.2)" fill="#ff3442"/>
+    </g>
+  </g>
+</svg>

@@ -8,8 +8,12 @@ import { catchError, Observable, retry, throwError } from 'rxjs';
 export class MarvelServiceService {
 
   constructor(private http:HttpClient) { }
-  getMarvel():Observable<any>{
-    return this.http.get("https://gateway.marvel.com/v1/public/characters?apikey=3a36ecf253e262f43f07c4a73843bdb3&hash=bf22667b02d4a8ae9a517319704d8889&ts=1")
+  getMarvel(page:number=1):Observable<any>{
+    const limit=10;
+    const offset=10*(page-1);
+    const apikey="3a36ecf253e262f43f07c4a73843bdb3";
+    const hash="bf22667b02d4a8ae9a517319704d8889"
+    return this.http.get(`https://gateway.marvel.com/v1/public/characters?apikey=${apikey}&hash=${hash}&ts=1&limit=${limit}&offset=${offset}`)
       .pipe(retry(1), catchError(this.processError));
 
   }

@@ -9,12 +9,18 @@ import { MarvelServiceService } from '../../services/marvel-service.service';
 export class PaginadorGrillaComponent implements OnInit {
   data:any;
   azOrder:boolean=false;
+  page:number=1;
   constructor(private api:MarvelServiceService) { }
 
   ngOnInit(): void {
-    this.api.getMarvel().subscribe((res:any) => {
+    this.api.getMarvel(this.page).subscribe((res:any) => {
       this.data=res.data.results;
-      console.log(res)
+    });
+  }
+  changePage(page:number){
+    this.page=page;
+    this.api.getMarvel(this.page).subscribe((res:any) => {
+      this.data=res.data.results;
     });
   }
   changeOrder():void{

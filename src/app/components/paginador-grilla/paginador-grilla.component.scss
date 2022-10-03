@@ -30,10 +30,21 @@
     }
 }
 
-.container {
+.container-grilla {
     column-gap: 1.125rem;
     row-gap: 1.16rem;
     justify-content: center;
+    //margin-bottom: 139px;
+}
+
+.paginador {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 45px 20% 139px;
+    .active {
+        font-weight: 600;
+    }
 }
 
 .order {
