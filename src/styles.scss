@@ -1,1 +1,19 @@
 /* You can add global styles to this file, and also import other style files */
+
+body * {
+    font-size: 16px !important;
+    font-family: 'Poppins', sans-serif !important;
+}
+
+body {
+    background-color: unset !important;
+    &.no-scroll {
+        overflow: hidden;
+    }
+}
+
+html {
+    background: #F7F7F7
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

@@ -1,0 +1,12 @@
+<div class="containerimag  w-100 d-flex">
+    <img src="{{hero.thumbnail.path+'.'+hero.thumbnail.extension}}" alt="{{hero.name}}" class="hero-name">
+    <img src="assets/img/left.svg" alt="left" class="left">
+</div>
+<div class="containerdes">
+    <img src="assets/img/upload.svg" alt="upload" class="upload">
+    <img src="assets/img/like.svg" alt="like" class="upload">
+    <div class="name">{{hero.name}}</div>
+    <div class="act">Updated {{hero.modified | date : 'MMMM y' }}</div>
+    <div class="detail">{{hero.description.length?hero.description:"Descripción no disponible"}}</div>
+
+</div>
