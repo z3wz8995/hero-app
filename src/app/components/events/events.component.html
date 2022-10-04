@@ -1,0 +1,10 @@
+<div>
+    <div class="titleevent">EVENTS</div>
+    <div class="carrusel container-event">
+        <div *ngFor="let Event of events">
+            <img src="{{Event.thumbnail.path+'.'+Event.thumbnail.extension}}" alt="{{Event.title}}" class="event-image">
+            <div class="titleevent">{{Event.title}}</div>
+            <div class="descrip">{{Event.title}}</div>
+        </div>
+    </div>
+</div>

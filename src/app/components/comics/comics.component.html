@@ -1,9 +1,9 @@
-<p>comics works!</p>
 <div>
     <div class="titlecomic">COMICS</div>
-    <div class="carrusel">
+    <div class="carrusel container-imag">
         <div *ngFor="let Comic of comics" (click)="popupShow(Comic)">
-            <img src="{{Comic.thumbnail.path+'.'+Comic.thumbnail.extension}}" alt="{{Comic.name}}" class="comic-image">
+            <img src="{{Comic.thumbnail.path+'.'+Comic.thumbnail.extension}}" alt="{{Comic.title}}" class="comic-image">
+            <div class="titlecomic">{{Comic.title}}</div>
         </div>
     </div>
 </div>

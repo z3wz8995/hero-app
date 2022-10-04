@@ -32,6 +32,22 @@ export class MarvelServiceService {
       .pipe(retry(1), catchError(this.processError));
 
   }
+  getMarvelstoriesbyid(id:number):Observable<any>{
+    const apikey="3a36ecf253e262f43f07c4a73843bdb3";
+    const hash="bf22667b02d4a8ae9a517319704d8889";
+    const limit=10;
+    return this.http.get(`https://gateway.marvel.com/v1/public/characters/${id}/series?apikey=${apikey}&hash=${hash}&ts=1&limit=${limit}`)
+      .pipe(retry(1), catchError(this.processError));
+
+  }
+  getMarveleventsbyid(id:number):Observable<any>{
+    const apikey="3a36ecf253e262f43f07c4a73843bdb3";
+    const hash="bf22667b02d4a8ae9a517319704d8889";
+    const limit=10;
+    return this.http.get(`https://gateway.marvel.com/v1/public/characters/${id}/events?apikey=${apikey}&hash=${hash}&ts=1&limit=${limit}`)
+      .pipe(retry(1), catchError(this.processError));
+
+  }
   processError(err: any) {
     let message = '';
     if (err.error instanceof ErrorEvent) {

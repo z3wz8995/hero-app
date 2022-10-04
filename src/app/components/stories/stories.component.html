@@ -1,0 +1,11 @@
+<div>
+    <div class="titlestories">STORIES</div>
+    <div class="carrusel container-stories ">
+        <div *ngFor="let Stories of stories">
+            <img src="{{Stories.thumbnail.path +'.'+Stories.thumbnail.extension}}" alt="{{Stories.title}}" class="stories-image">
+            <div class="titlestories">{{Stories.title}}</div>
+
+
+        </div>
+    </div>
+</div>

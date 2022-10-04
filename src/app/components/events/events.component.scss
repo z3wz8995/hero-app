@@ -1,4 +1,4 @@
-.titlecomic {
+.titleevent {
     position: relativew;
     font-size: 18px !important;
     font-weight: 700;
@@ -12,18 +12,24 @@
     overflow: scroll;
 }
 
-.container-imag {
-    column-gap: 1.125rem;
-    row-gap: 1.16rem;
-    justify-content: center;
-}
-
-.comic-image {
+.event-image {
     width: 192px;
-    height: 256px;
+    height: 103px;
     cursor: pointer;
     border-radius: 10px;
     opacity: 1;
     box-shadow: 0px 5px 20px #81818129;
     object-fit: cover;
+}
+
+.container-event {
+    column-gap: 1.125rem;
+    row-gap: 1.16rem;
+    justify-content: center;
+}
+
+.descrip {
+    font-size: 11px !important;
+    color: #393b44;
+    opacity: 1;
 }

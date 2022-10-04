@@ -1,0 +1,54 @@
+.icon {
+    position: relative;
+    width: 1rem;
+    height: 1rem;
+    font-weight: 600;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.comic-image {
+    position: relative;
+    width: 14.25rem;
+    height: 19rem;
+    border-radius: 10px;
+    box-shadow: 0px 5px 20px #81818129;
+}
+
+.issue {
+    position: relative;
+    font-size: 11px !important;
+    font-weight: 700;
+    color: #0090EF;
+    opacity: 1;
+    margin-left: 12px;
+}
+
+.titlecomic {
+    position: relative;
+    font-size: 30px !important;
+    font-weight: 700;
+    color: #393b44;
+    opacity: 1;
+    margin-left: 12px;
+}
+
+.published {
+    position: relative;
+    font-size: 11px !important;
+    font-weight: 700;
+    color: #0090EF;
+    opacity: 1;
+    margin-left: 12px;
+}
+
+.descrip {
+    position: relative;
+    text-align: left;
+    font-size: 13px !important;
+    color: #393B44;
+    width: 302px;
+    opacity: 1;
+    overflow: hidden;
+    margin-left: 12px;
+}

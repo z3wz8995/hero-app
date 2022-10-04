@@ -1,3 +1,8 @@
-<p>popup works!</p>
-{{comic.title}}
-<p (click)="close()">X</p>
+<div class="containter-pop">
+    <div (click)="close()" class="icon">X</div>
+    <img src="{{comic.thumbnail.path+'.'+comic.thumbnail.extension}}" alt="{{comic.title}}" class="comic-image">
+    <div class="titlecomic">{{comic.title}}</div>
+    <div class="issue">Issue number {{comic.issueNumber}}</div>
+    <div class="published">Published {{comic.dates[0].date }}</div>
+    <div class="descrip">{{comic.description.length?comic.description:"Descripción no encontrada"}}</div>
+</div>
