@@ -7,8 +7,13 @@ body * {
 
 body {
     background-color: unset !important;
+    &.no-scroll {
+        overflow: hidden;
+    }
 }
 
 html {
     background: #F7F7F7
 }
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

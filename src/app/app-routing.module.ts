@@ -7,9 +7,14 @@ const routes: Routes = [
     loadChildren:() => import("./modules/grilla/grilla.module").then(m=>m.GrillaModule)
   },
   {
+    path:"detalle/:id",
+    loadChildren:() => import("./modules/descripcion/detalle.module").then(m=>m.DetalleModule)
+  },
+  {
     path:"**",
     redirectTo:""
   }
+
 ];
 
 @NgModule({

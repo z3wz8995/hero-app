@@ -6,7 +6,7 @@
                 <img src="assets/img/order.svg" alt="orden" class="order {{azOrder?'':'invert'}}">
             </div>
         </div>
-        <div *ngFor="let Hero of data" class="padre">
+        <div *ngFor="let Hero of data" class="padre" (click)="goToHero(Hero.id)">
             <img src="{{Hero.thumbnail.path+'.'+Hero.thumbnail.extension}}" alt="{{Hero.name}}" class="hero-image">
             <div class=" texto-encima ">{{Hero.name}}</div>
             <div class="like"></div>

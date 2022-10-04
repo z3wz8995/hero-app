@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
 import { MarvelServiceService } from '../../services/marvel-service.service';
 
 @Component({
@@ -10,7 +11,7 @@ export class PaginadorGrillaComponent implements OnInit {
   data:any;
   azOrder:boolean=false;
   page:number=1;
-  constructor(private api:MarvelServiceService) { }
+  constructor(private api:MarvelServiceService, private router:Router) { }
 
   ngOnInit(): void {
     this.api.getMarvel(this.page).subscribe((res:any) => {
@@ -22,6 +23,9 @@ export class PaginadorGrillaComponent implements OnInit {
     this.api.getMarvel(this.page).subscribe((res:any) => {
       this.data=res.data.results;
     });
+  }
+  goToHero(id:number){
+    this.router.navigate(["/detalle/"+id]);
   }
   changeOrder():void{
     if(this.azOrder)

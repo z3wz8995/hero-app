@@ -1,21 +1,21 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
-import { TopMenuBarComponent } from './top-menu-bar.component';
+import { PopupComponent } from "./popup.component";
 
 
 @NgModule({
     declarations:[
-        TopMenuBarComponent
+        PopupComponent
     ],
     imports:[
         CommonModule
     ],
     exports:[
-        TopMenuBarComponent
+        PopupComponent
     ]
     
 })
 
-export class TopMenuBarModule{
+export class PopupModule{
 
 }

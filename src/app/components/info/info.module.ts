@@ -1,21 +1,21 @@
 import { CommonModule } from "@angular/common";
 import { NgModule } from "@angular/core";
-import { TopMenuBarComponent } from './top-menu-bar.component';
+import { InfoComponent } from "./info.component";
 
 
 @NgModule({
     declarations:[
-        TopMenuBarComponent
+        InfoComponent
     ],
     imports:[
         CommonModule
     ],
     exports:[
-        TopMenuBarComponent
+        InfoComponent
     ]
     
 })
 
-export class TopMenuBarModule{
+export class InfoModule{
 
 }

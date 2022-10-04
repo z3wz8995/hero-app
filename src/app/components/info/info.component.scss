@@ -1,0 +1,70 @@
+.containerimag {
+    position: relative;
+    display: inline-block;
+    padding: 0;
+    width: 100vw;
+    height: 243px;
+    object-fit: cover;
+    .hero-name {
+        height: 243px;
+        width: 100vw;
+        background: transparent;
+        object-fit: cover;
+    }
+    .left {
+        position: absolute;
+        background: transparent;
+        opacity: 1;
+        top: 51px;
+        left: 14px;
+        width: 24px;
+        height: 28px;
+    }
+}
+
+.containerdes {
+    position: relative;
+    margin-top: -15px;
+    margin-left: 14px;
+    margin-right: 14px;
+    min-height: 258px;
+    box-shadow: 0px 3px 10px #00000029;
+    border-radius: 14px;
+    object-fit: cover;
+    background-color: white;
+    .upload {
+        position: relative;
+        background: transparent;
+        opacity: 1;
+        margin-top: 14px;
+        margin-left: 12px;
+        width: 24px;
+        height: 28px;
+    }
+    .name {
+        position: relative;
+        font-size: 30px !important;
+        font-weight: 700;
+        color: #393b44;
+        opacity: 1;
+        margin-left: 12px;
+    }
+    .act {
+        position: relative;
+        font-size: 11px !important;
+        font-weight: 700;
+        color: #0090EF;
+        opacity: 1;
+        margin-left: 12px;
+    }
+    .detail {
+        position: relative;
+        text-align: left;
+        font-size: 13px !important;
+        color: #393B44;
+        width: 302px;
+        opacity: 1;
+        overflow: hidden;
+        margin-left: 12px;
+    }
+}
