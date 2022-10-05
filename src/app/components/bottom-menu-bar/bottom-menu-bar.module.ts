@@ -1,6 +1,7 @@
 import { NgModule } from "@angular/core";
 import { BottomMenuBarComponent } from './bottom-menu-bar.component';
 import { CommonModule } from '@angular/common';
+import { TopMenuBarModule } from '../top-menu-bar/top-menu-bar.module';
 
 
 @NgModule({
@@ -8,7 +9,8 @@ import { CommonModule } from '@angular/common';
         BottomMenuBarComponent
     ],
     imports:[
-        CommonModule
+        CommonModule,
+        TopMenuBarModule
     ],
     exports:[
         BottomMenuBarComponent

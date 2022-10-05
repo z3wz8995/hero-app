@@ -19,6 +19,12 @@ export class PaginadorGrillaComponent implements OnInit {
     });
   }
   changePage(page:number){
+    if(page>=3){
+      page=3;
+    }
+    if(page<=1){
+      page=1;
+    }
     this.page=page;
     this.api.getMarvel(this.page).subscribe((res:any) => {
       this.data=res.data.results;

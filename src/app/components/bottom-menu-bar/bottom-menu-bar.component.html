@@ -1,10 +1,55 @@
 <div class="container-bottom">
-    <img src="assets/img/menu.svg" alt="menu" id="menu" (click)="toggleMenu()">
-    <img src="assets/img/search.svg" alt="search" id="search">
-    <img src="assets/img/user.svg" alt="user" id="user">
+    <img src="assets/img/menu.svg" alt="menu" class="cursor-bmb" (click)="toggleMenu()">
+    <img src="assets/img/search.svg" alt="search" class="cursor-bmb" (click)="searchCharacter()">
+    <img src="assets/img/user.svg" alt="user" class="cursor-bmb" (click)="login()">
 </div>
 <div class="menu" *ngIf="showMenu">
-    este es el menu
-    <img src="assets/img/menu.svg" alt="menu" id="menu" (click)="toggleMenu()">
+    <div class="col-12 margen-container">
+        <img src="assets/img/logo.svg" alt="logo" id="foto1">
+        <div (click)="toggleMenu()" class="xfin">
+            X
+        </div>
+        <div class="search-bar1">
+            <div class="search-input">LOGIN / SIGNUP </div>
+        </div>
+    </div>
+    <div *ngFor="let item of lista" class="container-item">
+        <div>
+            <img src="assets/img/icon.png" alt="foto" class="container-fot"> {{item}}
+        </div>
+    </div>
+</div>
 
+<div class="menu" *ngIf="showMenuLogin">
+    <div class="col-12 margen-container">
+        <img src="assets/img/logo.svg" alt="logo" id="foto1">
+        <div (click)="login()" class="xfin">
+            X
+        </div>
+        <div class="container-login">
+            <div class="loginapp">
+                <div> CONTINÚE CON</div>
+                <img src="assets/img/google.svg" alt="Google" class="cont-foto cursor-bmb">
+                <img src="assets/img/faceb.svg" alt="Facebook" class="cont-foto cursor-bmb">
+                <img src="assets/img/linken.svg" alt="Linkendin" class="cont-foto cursor-bmb">
+            </div>
+            <div class="cont-text">
+                O INGRESE CON CORREO
+                <div class="search-bar">
+                    <img src="assets/img/correo.svg" alt="email" id="search">
+                    <input type="text" placeholder="CORREO ELECTRÓNICO" class="search-input">
+                </div>
+                <div class="search-bar">
+                    <img src="assets/img/password.svg" alt="pass" id="search">
+                    <input type="text" placeholder="CONTRASEÑA" class="search-input">
+                </div>
+                <div class="search-bar2">
+                    <div class="search-input cursor-bmb">INGRESAR </div>
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
 </div>

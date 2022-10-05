@@ -6,10 +6,14 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./top-menu-bar.component.scss']
 })
 export class TopMenuBarComponent implements OnInit {
-
+  placeholder: any;
+  
   constructor() { }
 
   ngOnInit(): void {
   }
-
+  
+  
 }
+
+

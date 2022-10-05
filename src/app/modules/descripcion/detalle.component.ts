@@ -18,6 +18,7 @@ import { MarvelServiceService } from "src/app/services/marvel-service.service";
             if(r["id"]){
                 this.api.getMarvelbyid(r["id"]).subscribe((res:any) => {
                     this.data=res.data.results[0];
+                    console.log(res);
                   });
                 this.api.getMarvelcomicsbyid(r["id"]).subscribe((res:any) => {
                     this.comics=res.data.results;
@@ -25,6 +26,7 @@ import { MarvelServiceService } from "src/app/services/marvel-service.service";
                 });
                 this.api.getMarvelstoriesbyid(r["id"]).subscribe((res:any) => {
                     this.stories=res.data.results;
+                    console.log(res);
                     
                 });
                 this.api.getMarveleventsbyid(r["id"]).subscribe((res:any) => {
